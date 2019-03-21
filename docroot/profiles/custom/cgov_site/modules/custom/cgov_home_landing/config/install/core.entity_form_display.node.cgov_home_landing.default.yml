@@ -101,7 +101,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_landing_contents:
-    type: paragraphs_classic_asymmetric
+    type: entity_reference_paragraphs
     weight: 9
     settings:
       title: Paragraph

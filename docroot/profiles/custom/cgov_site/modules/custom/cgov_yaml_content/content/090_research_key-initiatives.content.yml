@@ -63,15 +63,13 @@
             </div>
             </div>
   #### End intro text ####
-  #### Begin thumbnail list ####
+  #### Begin thumbnail cards ####
     - entity: 'paragraph'
-      type: "cgov_list"
-      field_list_item_style:
-        value: list_item_title_desc_image
-      field_list_items:
+      type: "cgov_thumbnail_row"
+      field_unlimited_row_cards:
         - entity: 'paragraph'
-          type: "cgov_internal_link"
-          field_internal_link:
+          type: "cgov_card_internal"
+          field_featured_item:
             - target_type: 'node'
               '#process':
                 callback: 'reference'
@@ -80,8 +78,8 @@
                   - type: 'cgov_mini_landing_page'
                     title: 'The Ras Initiative'
         - entity: 'paragraph'
-          type: "cgov_internal_link"
-          field_internal_link:
+          type: "cgov_card_internal"
+          field_featured_item:
             - target_type: 'node'
               '#process':
                 callback: 'reference'
@@ -90,8 +88,8 @@
                   - type: 'cgov_article'
                     title: 'National Clinical Trials Network (NCTN)'
         - entity: 'paragraph'
-          type: "cgov_internal_link"
-          field_internal_link:
+          type: "cgov_card_internal"
+          field_featured_item:
             - target_type: 'node'
               '#process':
                 callback: 'reference'
@@ -100,12 +98,12 @@
                   - type: 'cgov_article'
                     title: 'NCI Community Oncology Research Program (NCORP)'
         - entity: 'paragraph'
-          type: "cgov_internal_link"
-          field_override_title:
+          type: "cgov_card_internal"
+          field_override_card_title:
             - value: "NCI's Role in Immunotherapy Research"
           field_override_list_description:
             - value: 'Advances in cancer immunotherapy are the result of several decades of basic research, much of it supported by NCI, on how the immune system responds to cancer. NCI continues to support a wide range of research, from basic research to clinical trials, to advance the field of cancer immunotherapy.'
-          field_internal_link:
+          field_featured_item:
             - target_type: 'node'
               '#process':
                 callback: 'reference'
@@ -113,4 +111,4 @@
                   - 'node'
                   - type: 'cgov_article'
                     title: "NCI's Role in Immunotherapy Research"
-      ##### End Thumbnail List #####
+      ##### End Thumbnail Cards #####

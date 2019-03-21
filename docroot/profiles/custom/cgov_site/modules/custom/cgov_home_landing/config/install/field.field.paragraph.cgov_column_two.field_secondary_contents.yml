@@ -23,9 +23,6 @@ settings:
     negate: 0
     target_bundles:
       cgov_card_raw_html: cgov_card_raw_html
-      cgov_list: cgov_list
-      cgov_content_block: cgov_content_block
-      cgov_dynamic_list: cgov_dynamic_list
     target_bundles_drag_drop:
       cgov_card_raw_html:
         enabled: true
@@ -51,7 +48,7 @@ settings:
       cgov_secondary_feature_row:
         weight: -12
         enabled: false
-      cgov_list:
+      cgov_thumbnail_row:
         weight: -11
         enabled: false
 field_type: entity_reference_revisions
